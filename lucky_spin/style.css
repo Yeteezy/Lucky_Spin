@@ -1,0 +1,204 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+body {
+    background-image: url("https://t3.ftcdn.net/jpg/04/61/21/46/360_F_461214675_2AixWpR2TqYr0jwDPrt1QvGJBSePq4z6.jpg");
+    width: 100%;
+    height: 100%;
+   }
+
+.header{
+	width: 100%;
+	height: 86px;
+	background-image: url(https://st3.depositphotos.com/5687230/15413/i/450/depositphotos_154139718-stock-photo-blank-marble-texture-dark-background.jpg);
+}
+
+#t1{
+	padding: 20px 0px 10px 40px;
+	font-size: 36px;
+	color: #BEA67A;
+	width: 240px;
+	display: inline-block;
+	text-transform: uppercase;
+    font-weight: bold;
+}
+
+#m1{
+	padding: 20px 0px 10px 40px;
+	font-size: 36px;
+	color: #BEA67A;
+	width: 240px;
+	display: inline-block;
+	text-transform: uppercase;
+    font-weight: bold;
+}
+
+#m1:hover{
+	cursor: pointer;
+}
+
+#t2{
+	text-decoration: none;
+	padding: 50px 0px 10px 40px;
+	font-size: 36px;
+	color: #BEA67A;
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+	scroll-behavior: smooth;
+   }
+
+.menu{
+	padding: 28px;
+	display: inline-block;
+}
+
+.menu a{
+	font-weight:bold;
+	font-size: 18px;
+	color: #BEA67A;
+	padding-right: 40px;
+	text-transform: uppercase;
+}
+
+.menu a:hover{
+	cursor: pointer;
+	text-decoration: underline;
+}
+
+.slots{
+	display: inline-block;
+	margin: 20px;
+    margin-left: 35px;
+    margin-top: 45px;
+	padding-right: 20px;
+	height: 200px;
+	width: 250px;
+    border-radius: 45px;
+}
+
+.slots:hover {
+	cursor: pointer;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.modal {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 99998;
+    background-color: rgba(0, 0, 0, .3);
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    overflow-y: auto;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity .4s, visibility .4s;
+}
+
+.modal__box {
+    position: relative;
+    max-width: 500px;
+    padding: 45px;
+    z-index: 1;
+    margin: 30px 15px;
+    background-image: url(https://st3.depositphotos.com/5687230/15413/i/450/depositphotos_154139718-stock-photo-blank-marble-texture-dark-background.jpg); 
+    color: #BEA67A;
+	box-shadow: 0px 0px 17px -7px rgba(34, 60, 80, 0.2);
+    transform: scale(0);
+    transition: transform .8s;
+}
+
+.modal__close-btn {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    border: none;
+    background-color: transparent;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.modal__close-btn svg path {
+    transition: fill .4s;
+}
+
+.modal__close-btn:hover svg path {
+    fill: #BEA67A;
+}
+
+.modal__close-btn:active svg path {
+    fill: rgb(186, 53, 0);
+}
+
+.modal.open {
+    visibility: visible;
+    opacity: 1;
+}
+
+.modal.open .modal__box {
+    transform: scale(1);
+}
+
+.border-button {
+	text-decoration: none;
+	display: inline-block;
+	position: relative;
+	color: #BEA67A;
+	border: 1px hidden rgba(255, 255, 255, .4);
+	outline: none;
+	background: none;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-size: 18px;
+  }
+  .border-button:before, .border-button:after {
+	content: "";
+	position: absolute;
+	width: 0;
+	height: 0;
+	opacity: 0;
+	box-sizing: border-box;
+  }
+  .border-button:before {
+	bottom: 0;
+	left: 0;
+
+  }
+  .border-button:after {
+	top: 0;
+	right: 0;
+  }
+  
+  .border-button:hover:before, 
+  .border-button:hover:after {
+	height: 100%;
+	width: 100%;
+  }
+
+  .border-button:hover {
+	text-decoration: underline;
+	cursor: pointer;
+  }
