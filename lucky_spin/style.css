@@ -1,0 +1,476 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+body {
+    background-image: url("https://t3.ftcdn.net/jpg/04/61/21/46/360_F_461214675_2AixWpR2TqYr0jwDPrt1QvGJBSePq4z6.jpg");
+    width: 100%;
+    height: 100%;
+   }
+
+.header{
+	width: 100%;
+	height: 86px;
+	background-image: url(https://st3.depositphotos.com/5687230/15413/i/450/depositphotos_154139718-stock-photo-blank-marble-texture-dark-background.jpg);
+}
+
+.main{
+  flex: 1 1 auto;
+}
+
+.wrapper{
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+#t1{
+	padding: 20px 0px 10px 40px;
+	font-size: 36px;
+	color: #BEA67A;
+	width: 240px;
+	display: inline-block;
+	text-transform: uppercase;
+  font-weight: bold;
+}
+
+#m1{
+	padding: 20px 0px 10px 40px;
+	font-size: 36px;
+	color: #BEA67A;
+	width: 240px;
+	display: inline-block;
+	text-transform: uppercase;
+  font-weight: bold;
+}
+
+#m1:hover{
+	cursor: pointer;
+}
+
+#t2{
+	text-decoration: none;
+	padding: 50px 0px 10px 40px;
+	font-size: 36px;
+	color: #BEA67A;
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+	scroll-behavior: smooth;
+   }
+
+.menu{
+	padding: 28px;
+	display: inline-block;
+}
+
+.menu a{
+	font-weight:bold;
+	font-size: 18px;
+	color: #BEA67A;
+	padding-right: 40px;
+	text-transform: uppercase;
+}
+
+.menu a:hover{
+	cursor: pointer;
+	text-decoration: underline;
+}
+
+.slots{
+	display: inline-block;
+	margin: 20px;
+  margin-left: 35px;
+  margin-top: 45px;
+	padding-right: 20px;
+	height: 200px;
+	width: 250px;
+  border-radius: 45px;
+}
+
+.slots:hover {
+	cursor: pointer;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.modal {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 99998;
+    background-color: rgba(0, 0, 0, .3);
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    overflow-y: auto;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity .4s, visibility .4s;
+}
+
+.modal__box {
+    position: relative;
+    max-width: 500px;
+    padding: 45px;
+    z-index: 1;
+    margin: 30px 15px;
+    background-image: url(https://st3.depositphotos.com/5687230/15413/i/450/depositphotos_154139718-stock-photo-blank-marble-texture-dark-background.jpg); 
+    color: #BEA67A;
+	box-shadow: 0px 0px 17px -7px rgba(34, 60, 80, 0.2);
+    transform: scale(0);
+    transition: transform .8s;
+}
+
+.modal__close-btn {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    border: none;
+    background-color: transparent;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.modal__close-btn svg path {
+    transition: fill .4s;
+}
+
+.modal__close-btn:hover svg path {
+    fill: #BEA67A;
+}
+
+.modal__close-btn:active svg path {
+    fill: rgb(186, 53, 0);
+}
+
+.modal.open {
+    visibility: visible;
+    opacity: 1;
+}
+
+.modal.open .modal__box {
+    transform: scale(1);
+}
+
+.border-button {
+	text-decoration: none;
+	display: inline-block;
+	position: relative;
+	color: #BEA67A;
+	border: 1px hidden rgba(255, 255, 255, .4);
+	outline: none;
+	background: none;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-size: 18px;
+  }
+  .border-button:before, .border-button:after {
+	content: "";
+	position: absolute;
+	width: 0;
+	height: 0;
+	opacity: 0;
+	box-sizing: border-box;
+  }
+  .border-button:before {
+	bottom: 0;
+	left: 0;
+
+  }
+  .border-button:after {
+	top: 0;
+	right: 0;
+  }
+  
+  .border-button:hover:before, 
+  .border-button:hover:after {
+	height: 100%;
+	width: 100%;
+  }
+
+  .border-button:hover {
+	text-decoration: underline;
+	cursor: pointer;
+  }
+
+  .footer{
+    background-image: url(https://st3.depositphotos.com/5687230/15413/i/450/depositphotos_154139718-stock-photo-blank-marble-texture-dark-background.jpg);
+    height: 90px;
+    width: 100%;
+    padding: 5 0 5 0px;
+    left: 0;
+    bottom: 0;
+    overflow: hidden; 
+    text-align: center;
+  }
+  
+  .footer li{
+    list-style-type: none;
+    text-decoration: none;
+    color: #BEA67A;
+  }
+
+  .footer a{
+    list-style-type: none;
+    text-decoration: none;
+    color: #BEA67A;
+  }
+
+  .footer li:hover{
+    text-decoration: underline;
+  }
+  
+  .footer div{
+    display: inline-block;
+    text-align: left;
+    height: 132px;
+    margin: 3px;
+    padding-right: 10px;
+    color: #BEA67A;
+  }
+
+  .footer li:hover{
+    cursor:pointer;
+  }
+
+  #img1{
+    width: 100px;
+    height: 65px;
+    padding: 10px 10px 0px 10px;
+    float: right; /* Выравнивание по правому краю */
+    margin: 0 0 5px 5px;
+  }
+
+  #img3{
+    width: 100px;
+    height: 65px;
+    padding: 10px 10px 0px 10px;
+    float: left;
+    margin: 0 0 5px 5px;
+  }
+  
+  .f1{
+    font-size: 16px;
+    margin: 8px 10px 10px 10px;
+  }
+
+  #name{
+    font-size: 12px;
+  }
+
+.home{
+   background-image: url(https://t3.ftcdn.net/jpg/04/37/02/38/360_F_437023859_W2swXxIgfkGzat992gkqCc0kpztwnUZA.jpgttps://static.vecteezy.com/system/resources/previews/016/124/733/non_2x/poker-and-casino-playing-card-black-background-vector.jpghttps://st3.depositphotos.com/5687230/15413/i/450/depositphotos_154139718-stock-photo-blank-marble-texture-dark-background.jpg); 
+   display: inline-block;  
+   text-align: left;
+  }  
+
+#phrase{
+    margin: 15px;
+    font-size: 72px;
+    color: #BEA67A;
+  }
+
+  IMG.fig {
+    border-radius: 360px;
+    margin: 15px 100px 15px 15px;
+    height: 550px;
+    width: 550px;
+    float: right;
+  }
+
+.button-27 {
+  appearance: none;
+  background-color: #000000;
+  border: 2px solid #1A1A1A;
+  border-radius: 15px;
+  border-color: #BEA67A;
+  box-sizing: border-box;
+  color: #BEA67A;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 16px;
+  font-weight: 600;
+  line-height: normal;
+  margin: 30px;
+  min-height: 60px;
+  min-width: 0;
+  outline: none;
+  padding: 16px 24px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 190px;
+  will-change: transform;
+}
+
+.button-27:disabled {
+  pointer-events: none;
+}
+
+.button-27:hover {
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
+}
+
+.button-27:active {
+  box-shadow: none;
+  transform: translateY(0);
+}
+
+.element {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-top: 40px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+}
+
+.screen {		
+	background-image: url(https://cdn.photoroom.com/v1/assets-cached.jpg?path=backgrounds_v3/black/Photoroom_black_background_extremely_fine_texture_only_black_co_9f0bf3dc-239f-4052-9dc2-84100652639e.jpg);
+	position: relative;	
+	height: 550px;
+	width: 400px;	
+	box-shadow: 0px 0px 24px #5C5696;
+}
+
+.screen__content {
+	z-index: 1;
+	position: relative;	
+	height: 100%;
+  margin-top: 10px;
+  margin-left: 35px;
+}
+
+.screen__background {		
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 0;
+	-webkit-clip-path: inset(0 0 0 0);
+	clip-path: inset(0 0 0 0);	
+}
+
+.screen__background__shape {
+	transform: rotate(45deg);
+	position: absolute;
+}
+
+
+.login {
+	width: 320px;
+  height: 150px;
+	padding: 30px;
+	padding-top: 156px;
+}
+
+.login__field {
+	padding: 20px 0px;	
+	position: relative;	
+}
+
+.login__icon {
+	position: absolute;
+	top: 30px;
+	color: #7875B5;
+}
+
+.login__input {
+	border: none;
+	border-bottom: 2px solid #D1D1D4;
+	background: none;
+	padding: 10px;
+	padding-left: 24px;
+	font-weight: 700;
+	width: 75%;
+  color: #BEA67A;
+	transition: .2s;
+}
+
+.login__input:active,
+.login__input:focus,
+.login__input:hover {
+	outline: none;
+	border-bottom-color: #6A679E;
+}
+
+.login__submit {
+	background: #fff;
+	font-size: 14px;
+	margin-top: 30px;
+	padding: 16px 20px;
+	border-radius: 26px;
+	border: 1px solid #D4D3E8;
+	text-transform: uppercase;
+	font-weight: 700;
+	display: flex;
+	align-items: center;
+	width: 274px;
+	color: black;
+	box-shadow: 0px 2px 2px #5C5696;
+	cursor: pointer;
+	transition: .2s;
+}
+
+.login__submit:active,
+.login__submit:focus,
+.login__submit:hover {
+	border-color: #6A679E;
+	outline: none;
+}
+
+.button__icon {
+	font-size: 24px;
+	margin-left: auto;
+	color: #7875B5;
+}
+
+.reg1{
+  color: #BEA67A;
+  padding-left: 50px;
+}
